@@ -13,9 +13,12 @@ picam2 = Picamera2() #creates a camera object
 counter = 0 #variable to store picture count
 scd = adafruit_scd30.SCD30(board.I2C())#Creates a sensor object
 motor1 = LED(17) #intake
-motor2 = LED(27)#outake
+motor2 = LED(16)#outake
+IRled1 = LED(22) #declare IR lighting
+IRled1 = LED(23) #declare IR lighting
 IRled1 = LED(24) #declare IR lighting
-servo = AngularServo(23, min_angle=-90, max_angle=90)
+IRled1 = LED(25) #declare IR lighting
+servo = AngularServo(4, min_angle=-90, max_angle=90)
 
 titles = ['Day', 'Hour', 'Temperature (C)', 'Humidity (%)', 'CO2 (PPM)']
 
